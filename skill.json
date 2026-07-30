@@ -1,0 +1,31 @@
+{
+  "name": "genpark-agent-to-agent-brand-commerce-representative-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Agent-to-Agent (A2A) brand commerce representative for buyer LLM recommendation engines.",
+  "author": "genpark",
+  "category": "sales",
+  "tags": [
+    "a2a-commerce",
+    "aeo-brand-agent",
+    "buyer-llm-interface",
+    "product-catalog-context"
+  ],
+  "inputs": {
+    "buyer_agent_query": {
+      "type": "string"
+    },
+    "product_sku": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "a2a_brand_response": {
+      "type": "object"
+    },
+    "aeo_favorability_score": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
